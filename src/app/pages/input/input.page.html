@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>input</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu-principal"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-sm="6" size-md="3">
+        <ion-input [(ngModel)]="nota1" fill="outline" type="number" placeholder="Insira a nota 1:"></ion-input>
+        <ion-input [(ngModel)]="nota2" fill="outline" type="number" placeholder="Insira a nota 2:"></ion-input>
+        <ion-input [(ngModel)]="nota3" fill="outline" type="number" placeholder="Insira a nota 3:"></ion-input>
+        <ion-input [(ngModel)]="nota4" fill="outline" type="number" placeholder="Insira a nota 4:"></ion-input>
+        <ion-button (click)="enviar()">Enviar</ion-button>
+      </ion-col>
+    </ion-row>
+    <p>{{input}}</p>
+  </ion-grid>
+</ion-content>
